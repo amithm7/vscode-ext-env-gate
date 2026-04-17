@@ -7,11 +7,11 @@ const warningHtmlRaw = require("./webview/env-warning.html") as string;
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   // This line of code will only be executed once when your extension is activated
-  console.log("✅ Env Guard activated");
+  console.log("✅ Env Gate activated");
 
   // implementation of the command defined in package.json
   const disposable = vscode.commands.registerCommand(
-    "env-guard.resetSession",
+    "env-gate.resetSession",
     () => {
       acceptedFiles.clear();
       vscode.window.showInformationMessage(
@@ -100,7 +100,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.window.registerCustomEditorProvider(
-      "envGuard.confirmation",
+      "envGate.confirmation",
       new EnvConfirmationProvider(),
       { webviewOptions: { retainContextWhenHidden: true } },
     ),

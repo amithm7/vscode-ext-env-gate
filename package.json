@@ -1,10 +1,10 @@
 {
-  "name": "env-guard",
-  "displayName": "Env Guard",
+  "name": "env-gate",
+  "displayName": "Env Gate",
   "description": "Warns when opening .env files, which may contain secrets.",
   "publisher": "amithm7",
-  "repository": "https://github.com/amithm7/vscode-ext-env-guard",
-  "version": "1.0.0",
+  "repository": "https://github.com/amithm7/vscode-ext-env-gate",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.115.0"
   },
@@ -16,14 +16,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "env-guard.resetSession",
-        "title": "Env Guard: Reset Session"
+        "command": "env-gate.resetSession",
+        "title": "Env Gate: Reset Session"
       }
     ],
     "customEditors": [
       {
-        "viewType": "envGuard.confirmation",
-        "displayName": "Env Guard Confirmation",
+        "viewType": "envGate.confirmation",
+        "displayName": "Env Gate Confirmation",
         "selector": [
           {
             "filenamePattern": "**/.env*"
