@@ -2,6 +2,7 @@
   "name": "env-guard",
   "displayName": "Env Guard",
   "description": "Warns when opening .env files, which may contain secrets.",
+  "publisher": "amithm7",
   "repository": "https://github.com/amithm7/vscode-ext-env-guard",
   "version": "1.0.0",
   "engines": {
