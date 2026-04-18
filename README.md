@@ -6,11 +6,13 @@ Warns when opening `.env` files, which may contain secrets, (excludes `.env.exam
 
 ![gate screen](./images/screen-gate-1.0.0.png)
 
+- Use command `Env Gate: Reset Session` to clear session of remembered `.env` files, which bypass the gate.
+
 ## Release Notes
 
-### 1.0.0
+### 1.0.1
 
-Initial release
+Initial public release
 
 ---
 
