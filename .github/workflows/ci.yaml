@@ -11,6 +11,16 @@ jobs:
     name: 🚀 Publish
     runs-on: ubuntu-slim
     steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v6
+        with:
+          version: latest
+          cache: true
+
+      - name: Install deps
+        run: pnpm ci
+
       - name: Package
         run: |
           pnpm exec vsce package
